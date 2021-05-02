@@ -1,0 +1,7 @@
+{
+  "name": "prapp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
