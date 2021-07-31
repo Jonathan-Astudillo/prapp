@@ -1,3 +1,68 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <ion-menu menuId="main-menu" content-id="main">
+    <ion-content>
+
+      <div class="menu-header-bg">Menu</div>
+      <div class="header-content">
+        <img src="../assets/icon/nube.jpg" alt="">
+        <ion-label>
+          <h2>Virgen de la Nube</h2>
+          <p>Entrega siempre más de lo que se espera de ti</p>
+        </ion-label>
+      </div>
+      <div class="action-button">
+        <ion-button>
+          <ion-icon slot="start" name="add"></ion-icon>
+          Lista de Clientes
+        </ion-button>
+      </div>
+    
+      <ion-list>
+        <ion-menu-toggle>
+        <ion-item routerLink="/ventanas">
+          <ion-icon class="icono" name="Home" slot="start"></ion-icon>
+          <ion-label class="titulo1">Ventanas</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+      <ion-menu-toggle>
+        <ion-item routerLink="/puertas">
+          <ion-icon class="icono" name="Home" slot="start"></ion-icon>
+          <ion-label class="titulo1">Puertas</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+      <ion-menu-toggle>
+        <ion-item routerLink="/mesas">
+          <ion-icon class="icono" name="Home" slot="start"></ion-icon>
+          <ion-label class="titulo1">Mesas</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+      <ion-menu-toggle>
+        <ion-item routerLink="/sillas">
+          <ion-icon class="icono" name="Home" slot="start"></ion-icon>
+          <ion-label class="titulo1">Sillas</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+
+      <ion-menu-toggle>
+        <ion-item routerLink="/mesa">
+          <ion-icon class="icono" name="Home" slot="start"></ion-icon>
+          <ion-label class="titulo1">Mesa de centro</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+      <ion-menu-toggle>
+        <ion-item routerLink="/espejos">
+          <ion-icon class="icono" name="Home" slot="start"></ion-icon>
+          <ion-label class="titulo1">Espejos</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+      <ion-menu-toggle>
+        <ion-item routerLink="/logout">
+          <ion-icon class="icono" name="Home" slot="start"></ion-icon>
+          <ion-label class="titulo1">Cerrar Sesion</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet id="main"></ion-router-outlet>
 </ion-app>

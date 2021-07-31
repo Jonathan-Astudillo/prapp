@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Producto</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button>C</ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="login-section ion-padding">
+    <div class="login-form ion-padding">
+      
+      <div class="form-input">
+        <ion-item>
+          <ion-label position="floating">Codigo</ion-label>
+          <ion-input type="text" [(ngModel)] = "codigo" name="codigo"></ion-input>
+        </ion-item>
+      </div>
+
+      <div class="form-input">
+        <ion-item>
+          <ion-label position="floating">Nombre</ion-label>
+          <ion-input type="text" [(ngModel)] = "nombre" name="nombre"></ion-input>
+        </ion-item>
+      </div>
+
+      <div class="form-input">
+        <ion-item>
+          <ion-label position="floating">Precio</ion-label>
+          <ion-input type="number" [(ngModel)] = "precio" name="precio"></ion-input>
+        </ion-item>
+      </div>
+
+      <div class="form-input">
+        <ion-item>
+          <input id="file-upload" type="file" accept="image/*" (change) = 'OnCargarImagen($event)'>
+          
+        </ion-item>
+      </div>
+
+    </div>
+    <div class="action-button ion-padding">
+      <ion-button size="large" class="login-button" (click) = "OnGuardarProducto()">Guardar</ion-button>
+    </div>
+  </div>
+
+</ion-content>

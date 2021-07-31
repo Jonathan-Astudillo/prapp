@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="titulo">Puertas</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button class="titulo" routerLink="/ingresopuertas"> Nuevo </ion-button>
+      
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card *ngFor="let puerta of listaPuertas">
+    <label>codigo: {{puerta.codigo}}  </label> <br>
+    <label>nombre : {{puerta.nombre}} </label> <br>
+    <label> precio: {{puerta.precio}} </label> <br>
+    <img src = {{puerta.foto}} />
+  </ion-card>
+
+</ion-content>

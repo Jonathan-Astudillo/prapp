@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="titulo">Sillas</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button class="titulo" routerLink="/ingresosillas"> Nuevo </ion-button>
+      
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card *ngFor="let silla of listaSillas">
+    <label>codigo: {{silla.codigo}}  </label> <br>
+    <label>nombre : {{silla.nombre}} </label> <br>
+    <label> precio: {{silla.precio}} </label> <br>
+    <img src = {{silla.foto}} />
+  </ion-card>
+
+</ion-content>

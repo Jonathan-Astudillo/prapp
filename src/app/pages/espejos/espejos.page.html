@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="titulo">Espejos</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button class="titulo" routerLink="/ingresoespejos"> Nuevo </ion-button>
+      
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card *ngFor="let espejo of listaEspejos">
+    <label>codigo: {{espejo.codigo}}  </label> <br>
+    <label>nombre : {{espejo.nombre}} </label> <br>
+    <label> precio: {{espejo.precio}} </label> <br>
+    <img src = {{espejo.foto}} />
+  </ion-card>
+
+</ion-content>

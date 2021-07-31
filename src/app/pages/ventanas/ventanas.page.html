@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="titulo">Ventanas</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button class="titulo" routerLink="/nuevoproducto"> Nuevo </ion-button>
+      
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+<ion-card *ngFor="let ventana of listaVentanas">
+  <label>codigo: {{ventana.codigo}}  </label> <br>
+  <label>nombre : {{ventana.nombre}} </label> <br>
+  <label> precio: {{ventana.precio}} </label> <br>
+  <img src = {{ventana.foto}} />
+</ion-card>
+
+</ion-content>

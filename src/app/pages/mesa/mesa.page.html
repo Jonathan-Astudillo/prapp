@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="titulo">Mesas Centro</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button class="titulo" routerLink="/ingresomesascentro"> Nuevo </ion-button>
+      
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card *ngFor="let mesaCentro of listaMesasCentro">
+    <label>codigo: {{mesaCentro.codigo}}  </label> <br>
+    <label>nombre : {{mesaCentro.nombre}} </label> <br>
+    <label> precio: {{mesaCentro.precio}} </label> <br>
+    <img src = {{mesaCentro.foto}} />
+  </ion-card>
+
+</ion-content>
